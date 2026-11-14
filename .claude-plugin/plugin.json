@@ -1,0 +1,23 @@
+{
+  "name": "iimbdbe",
+  "displayName": "IIMB BBA DBE Study Companion",
+  "version": "1.0.0",
+  "description": "A notes-grounded tutor for IIMB BBA DBE: guided lessons, validated quizzes, spaced revision, concept maps and formula practice.",
+  "author": {
+    "name": "Rahul Khatri"
+  },
+  "homepage": "https://iimbdbe.rahulkhatri.com",
+  "repository": "https://github.com/Rahulk644/iimbdbe-plugin",
+  "license": "MIT",
+  "keywords": [
+    "education",
+    "iimb",
+    "bba",
+    "dbe",
+    "study",
+    "retrieval-practice",
+    "mcp"
+  ],
+  "icon": "./assets/icon.png",
+  "privacyPolicyUrl": "https://github.com/Rahulk644/iimbdbe-plugin#privacy-and-saved-progress"
+}

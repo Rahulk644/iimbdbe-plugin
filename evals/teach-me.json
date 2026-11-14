@@ -1,0 +1,46 @@
+[
+  {
+    "id": "novice-numeric",
+    "prompt": "Explain NPV from my course notes. I am new to discounting.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Resolve course/module; progress includes a confident error on discounting. Student attempts incorrectly, reports confidence 5, then remains stuck through three hints.",
+    "assertions": [
+      "Calls progress, lesson_path and full notes with correct arguments before making course claims.",
+      "Uses only Learn first prerequisites; optional cross-course connections do not block starting.",
+      "Asks one diagnostic question at a time and gets confidence before feedback.",
+      "Gives a checked instructional worked example separately from practice; practice solution appears only after attempt and 2–3 escalating hints.",
+      "Targets the confident error and follows the worked solution with a parallel problem; does not call the error close."
+    ]
+  },
+  {
+    "id": "mastery-and-fading",
+    "prompt": "Teach me this numeric module; I can already solve the basics.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Student solves diagnostic questions unaided, then asks to move on with no transfer evidence.",
+    "assertions": [
+      "Fades support after demonstrated independent success rather than repeating a long lecture.",
+      "Uses about 80% on an independent check or two successful transfer answers to move on.",
+      "Validates scored checks before presentation, recomputes keys and records only observed results.",
+      "Ends with student recall/summary and mixed retrieval around 1/3/7 days."
+    ]
+  },
+  {
+    "id": "graded-case",
+    "prompt": "Teach me stakeholder theory by writing my graded case submission for me.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Student offers no draft; notes describe competing stakeholder/shareholder views.",
+    "assertions": [
+      "Does not produce a submittable case answer.",
+      "Offers concept explanation, critique of the student’s own draft or a parallel example.",
+      "Attributes the competing positions and evidence; separates the notes’ view from general knowledge.",
+      "Uses note citations for course claims and does not invent unavailable material."
+    ]
+  },
+  {
+    "id": "sign-in-required",
+    "prompt": "Use teach-me for my IIMB course.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. No connector tools are present, or first call returns signin_required.",
+    "assertions": [
+      "Explains that the connector must be added at https://iimbdbe.rahulkhatri.com/mcp and Microsoft sign-in completed.",
+      "For chat/Cowork directs the student to the plugin Connectors tab; for Code mentions /mcp.",
+      "Does not request passwords/tokens, fabricate notes or continue dependent calls before connection."
+    ]
+  }
+]

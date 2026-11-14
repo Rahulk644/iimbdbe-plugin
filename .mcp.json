@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "iimbdbe": {
+      "type": "http",
+      "url": "https://iimbdbe.rahulkhatri.com/mcp"
+    }
+  }
+}

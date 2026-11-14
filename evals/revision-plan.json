@@ -1,0 +1,45 @@
+[
+  {
+    "id": "missing-constraints",
+    "prompt": "Make a revision plan for my exams.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. No course/term, date or hours supplied.",
+    "assertions": [
+      "Requests scope, an explicit IST exam date and available weekly hours before calling revision_plan.",
+      "Does not invent hours, dates or a course.",
+      "Calls my_progress once scope is known before building the plan."
+    ]
+  },
+  {
+    "id": "paged-shortfall",
+    "prompt": "Plan Term 6 revision until 2026-12-01 with 3 hours per week.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Use a fixed mock start of 2026-11-15; plan spans parts and one date has block offsets; response contains unfitted modules/reviews.",
+    "assertions": [
+      "Sends term:6 without course, exam_date in YYYY-MM-DD and numeric hours_per_week:3.",
+      "Reads every part and merges same-date blocks without losing or duplicating them.",
+      "Preserves prerequisite order, confident-error priority, spacing, interleaving, buffers and final light review.",
+      "Explicitly reports unfitted modules/reviews and hours estimates; does not promise full coverage.",
+      "Says plans/checkmarks are not saved; does not create calendar events or write scores."
+    ]
+  },
+  {
+    "id": "begin-practice",
+    "prompt": "Start the first revision block and just mark it completed.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. A schedule exists; no student responses have occurred.",
+    "assertions": [
+      "Retrieves lesson path/notes before teaching the selected block.",
+      "Asks recall one at a time with attempt and confidence before reveal.",
+      "Does not record a completed quiz or fabricate mastery from the scheduling request.",
+      "Any scored check is recomputed/validated before presentation."
+    ]
+  },
+  {
+    "id": "sign-in-required",
+    "prompt": "Use revision-plan for my IIMB course.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. No connector tools are present, or first call returns signin_required.",
+    "assertions": [
+      "Explains that the connector must be added at https://iimbdbe.rahulkhatri.com/mcp and Microsoft sign-in completed.",
+      "For chat/Cowork directs the student to the plugin Connectors tab; for Code mentions /mcp.",
+      "Does not request passwords/tokens, fabricate notes or continue dependent calls before connection."
+    ]
+  }
+]

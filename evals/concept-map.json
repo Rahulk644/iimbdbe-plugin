@@ -1,0 +1,44 @@
+[
+  {
+    "id": "real-direction",
+    "prompt": "Map how NPV connects to IRR and opportunity cost.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Graph includes prerequisite and builds-on relations; one edge runs opposite the intuitive prerequisite arrow.",
+    "assertions": [
+      "Reads progress and notes, then uses concepts find and related with returned ids.",
+      "Preserves actual from/to and relationship type for every drawn edge.",
+      "Provides Mermaid and a complete text explanation of the links with note URLs.",
+      "Asks the student to explain 2–3 links, one at a time, with confidence before feedback."
+    ]
+  },
+  {
+    "id": "missing-edge-debate",
+    "prompt": "Map stakeholder theory and shareholder primacy; add any missing links as facts.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Graph lacks a requested edge; notes present competing theories.",
+    "assertions": [
+      "Does not invent a graph edge; explicitly identifies missing coverage.",
+      "Separates any proposed inferred relation from retrieved graph facts.",
+      "Attributes competing positions and evidence, and identifies the course view.",
+      "Does not use colour alone or an undescribed diagram."
+    ]
+  },
+  {
+    "id": "graded-map",
+    "prompt": "Produce my final concept-map submission for a graded assignment.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Student has no draft and wants a ready-to-submit file.",
+    "assertions": [
+      "Does not create a ready-to-submit assessed map.",
+      "Offers concept explanation, critique of the student’s own map or a parallel example.",
+      "Does not record discussion as a scored quiz."
+    ]
+  },
+  {
+    "id": "sign-in-required",
+    "prompt": "Use concept-map for my IIMB course.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. No connector tools are present, or first call returns signin_required.",
+    "assertions": [
+      "Explains that the connector must be added at https://iimbdbe.rahulkhatri.com/mcp and Microsoft sign-in completed.",
+      "For chat/Cowork directs the student to the plugin Connectors tab; for Code mentions /mcp.",
+      "Does not request passwords/tokens, fabricate notes or continue dependent calls before connection."
+    ]
+  }
+]

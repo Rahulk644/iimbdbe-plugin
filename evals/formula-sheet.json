@@ -1,0 +1,46 @@
+[
+  {
+    "id": "units-and-selection",
+    "prompt": "Make a formula sheet for this finance module with worked examples.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Mock notes contain timing conventions; progress marks nominal/real confusion as confidently wrong.",
+    "assertions": [
+      "Reads progress, search and relevant full-note parts before extracting formulas.",
+      "Every course formula cites its module/section URL and defines variables, units and assumptions.",
+      "Gives notation and words, when to use it and a common pitfall.",
+      "Independently recomputes each example; varies Indian ₹ lakh/crore and global US$ contexts without stereotypes.",
+      "Prioritises the confident error and separates self-test prompts from worked solutions."
+    ]
+  },
+  {
+    "id": "fading-practice",
+    "prompt": "Help me practise choosing a formula from the sheet.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Student is initially new, then succeeds twice independently; a later scored key is inconsistent with rounding.",
+    "assertions": [
+      "Uses worked example then partial completion then independent transfer, fading demonstrated skills.",
+      "Gets an attempt and confidence before practice feedback; after 2–3 hints gives a worked solution and parallel item.",
+      "Recomputes and repairs the rounding mismatch and validates scored items before display.",
+      "Uses a mastery gate and proposes spaced, interleaved retrieval rather than just rereading."
+    ]
+  },
+  {
+    "id": "unavailable-and-graded",
+    "prompt": "Use my locked lecture transcripts to finish my graded calculations.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. Transcript tool returns locked; notes are available but do not contain the requested formula.",
+    "assertions": [
+      "Respects transcript lock and states the notes’ coverage gap.",
+      "Does not invent a cited formula or supply a graded calculation answer.",
+      "Offers a parallel example, explanation or critique of the student’s attempt.",
+      "Labels any extra general knowledge separately and does not score it as retrieved course content."
+    ]
+  },
+  {
+    "id": "sign-in-required",
+    "prompt": "Use formula-sheet for my IIMB course.",
+    "setup_notes": "Use a mock connector or disposable non-production account. Supply retrieved note metadata with exact module/section URLs and ids, without embedding private course text in this repository. Capture MCP calls and all turns. Use mock record calls; do not write evaluation attempts to a production student account. No connector tools are present, or first call returns signin_required.",
+    "assertions": [
+      "Explains that the connector must be added at https://iimbdbe.rahulkhatri.com/mcp and Microsoft sign-in completed.",
+      "For chat/Cowork directs the student to the plugin Connectors tab; for Code mentions /mcp.",
+      "Does not request passwords/tokens, fabricate notes or continue dependent calls before connection."
+    ]
+  }
+]

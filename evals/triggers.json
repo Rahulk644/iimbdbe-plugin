@@ -1,0 +1,264 @@
+[
+  {
+    "query": "Explain NPV",
+    "should_trigger": [
+      "teach-me"
+    ],
+    "should_not_trigger": [
+      "quiz-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Teach me this module",
+    "should_trigger": [
+      "teach-me"
+    ],
+    "should_not_trigger": [
+      "quiz-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Help me understand demand elasticity",
+    "should_trigger": [
+      "teach-me"
+    ],
+    "should_not_trigger": [
+      "quiz-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Walk me through a practice concept, do not test me",
+    "should_trigger": [
+      "teach-me"
+    ],
+    "should_not_trigger": [
+      "quiz-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Test me on NPV",
+    "should_trigger": [
+      "quiz-me"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Quiz me on this module",
+    "should_trigger": [
+      "quiz-me"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "MCQs on marketing from my notes",
+    "should_trigger": [
+      "quiz-me"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Give me practice questions on discounting",
+    "should_trigger": [
+      "quiz-me"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Make a revision plan for Term 6",
+    "should_trigger": [
+      "revision-plan"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Build a study timetable until my exam",
+    "should_trigger": [
+      "revision-plan"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Schedule my revision over three weeks",
+    "should_trigger": [
+      "revision-plan"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Plan review around my weak topics",
+    "should_trigger": [
+      "revision-plan"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Draw a concept map of this module",
+    "should_trigger": [
+      "concept-map"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "How does NPV connect to IRR?",
+    "should_trigger": [
+      "concept-map"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Map prerequisite links between these ideas",
+    "should_trigger": [
+      "concept-map"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Show a network of the concepts I need",
+    "should_trigger": [
+      "concept-map"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Make a formula sheet for this module",
+    "should_trigger": [
+      "formula-sheet"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "concept-map"
+    ]
+  },
+  {
+    "query": "List equations with units and pitfalls",
+    "should_trigger": [
+      "formula-sheet"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "concept-map"
+    ]
+  },
+  {
+    "query": "Build a formula reference for self-testing",
+    "should_trigger": [
+      "formula-sheet"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "concept-map"
+    ]
+  },
+  {
+    "query": "Summarise the formulas, do not quiz me",
+    "should_trigger": [
+      "formula-sheet"
+    ],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "concept-map"
+    ]
+  },
+  {
+    "query": "Fix this Next.js component",
+    "should_trigger": [],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  },
+  {
+    "query": "Schedule a meeting with my team",
+    "should_trigger": [],
+    "should_not_trigger": [
+      "teach-me",
+      "quiz-me",
+      "revision-plan",
+      "concept-map",
+      "formula-sheet"
+    ]
+  }
+]

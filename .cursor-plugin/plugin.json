@@ -1,0 +1,8 @@
+{
+  "name": "iimbdbe",
+  "description": "IIMB BBA DBE study skills and Microsoft-authenticated course connector.",
+  "author": {
+    "name": "Rahul Khatri"
+  },
+  "license": "MIT"
+}

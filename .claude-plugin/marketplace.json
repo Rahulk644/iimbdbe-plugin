@@ -1,0 +1,13 @@
+{
+  "name": "iimbdbe",
+  "owner": {
+    "name": "Rahul Khatri"
+  },
+  "plugins": [
+    {
+      "name": "iimbdbe",
+      "source": "./"
+    }
+  ],
+  "description": "Notes-grounded study skills for IIMB BBA DBE."
+}
