@@ -8,4 +8,4 @@
 - Claude marketplace packaging, uploadable zip layout and a minimal Cursor manifest.
 - Shared tutor principles, quiz-quality rules, bias checks and manual eval scenarios.
 
-Source prepared for release; publication and live client acceptance remain pending.
+Published 2026-11-15 on GitHub and as a download from the study site.

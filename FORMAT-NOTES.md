@@ -42,5 +42,5 @@ Claude manifest validation is a local format check. It does not test OAuth conse
 Microsoft callbacks, quiz-card display, actual skill triggering or upload acceptance.
 The release still needs claude.ai upload, Cowork/Claude Code sign-in, Cursor discovery
 and sign-in, and model evals on Haiku, Sonnet and Opus with and without the plugin.
-No conflicting format requirement was found in the cited documentation. The public
-repository and download URL are intended release locations, pending publication.
+No conflicting format requirement was found in the cited documentation. Published at
+https://github.com/Rahulk644/iimbdbe-plugin and https://iimbdbe.rahulkhatri.com/downloads/iimbdbe-plugin.zip.
